@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style> 
+        body {
+            background-image: url('https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Who to Register</h2>
+    <ol type="I">
+        <li>Graphic Designers</li>
+        <li>IT students</li>
+        <li>Photographers</li>
+        <li>Journalist</li>
+        <li>Form Four Leavers</li>
+    </ol>
+    <img src="https://images.pexels.com/photos/31950664/pexels-photo-31950664/free-photo-of-vintage-porst-135l-camera-with-film-roll.jpeg" alt="Pexels Image" width="500">
+    <h2>Contact Information</h2>
+    <table>
+        <tr>
+            <th>Daniel Thuo</th>
+            <th>110,Othaya</th>
+            <th>+254721987686</th>
+            <th>danielthuo@gmail.com </th>
+        </tr>
+        <tr>
+            <td>Nancy Mutitu</td>
+            <td>110,Othaya</td>
+            <td>+254724567890</td>
+            <td>nancymutitu@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Brian Thuo</td>
+            <td>110,Othaya</td>
+            <td>+254702223273</td>
+            <td>brianwanyaga@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Emeldah Wanjiru</td>
+            <td>110,Othaya</td>
+            <td>+25472373735</td>
+            <td>emeldahwajiru@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Priscillah Nyambura</td>
+            <td>110,Othaya</td>
+            <td>+254754656900</td>
+            <td>priscillahnyambura@gmail.com</td>
+        </tr>
+    <h2>Registration Form</h2>
+    <form action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Subscription Plan:</label>
+        <input type="radio" id="basic" name="plan" value="basic" required>
+        <label for="basic">Basic</label>
+        <input type="radio" id="premium" name="plan" value="premium">
+        <label for="premium">Premium</label>
+
+        <label>Preferences:</label>
+        <input type="checkbox" id="newsletter" name="preferences" value="newsletter">
+        <label for="newsletter">Subscribe to newsletter</label>
+        <input type="checkbox" id="updates" name="preferences" value="updates">
+        <label for="updates">Receive updates</label>
+
+        <br><br>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
+
